@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "../../components/Input";
 import PageHeader from "../../components/PageHeader";
-
+import Textarea from "../../components/Textarea";
 import warningIcon from "../../assets/images/icons/warning.svg";
 
 import "./styles.css";
@@ -11,7 +11,7 @@ function TeachForm() {
     <div id="page-teacher-form" className="container">
       <PageHeader
         title="Que incrível que você quer dar aulas."
-        description="O primeiro passao é preencher esse formulário de inscrição"
+        description="O primeiro passo é preencher esse formulário de inscrição"
       />
 
       <main>
@@ -20,6 +20,7 @@ function TeachForm() {
           <Input name="name" label="Nome completo" />
           <Input name="avatar" label="Avatar" />
           <Input name="whatsapp" label="Whatsapp" />
+          <Textarea name="bio" label="Biografia" />
         </fieldset>
 
         <fieldset>
